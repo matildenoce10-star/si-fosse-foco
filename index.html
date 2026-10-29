@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S'i' fosse foco</title>
+<meta name="description" content="Presentazione di Matilde Dellanoce, Liceo Linguistico Giuseppe Parini: come Fabrizio De André ha messo in musica il sonetto di Cecco Angiolieri.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg" aria-hidden="true"></div>
+<div class="progress" id="progress"></div>
+<header class="topbar">
+  <a class="brand" href="#home">S'i' fosse foco</a>
+  <div class="right">
+    <span class="who">Matilde Dellanoce · Liceo Linguistico Giuseppe Parini</span>
+    <button id="fsBtn" title="Schermo intero (F)">⛶ Presenta</button>
+  </div>
+</header>
+<nav class="dots" id="dots"></nav>
+
+<!-- 1. COPERTINA -->
+<section id="home" data-title="Copertina">
+  <div class="cover">
+    <header class="cover-head">
+      <span>Letteratura italiana e musica</span>
+    </header>
+
+    <div class="cover-main">
+      <div class="cover-title">
+        <p class="cover-eyebrow">Dal sonetto alla canzone d'autore</p>
+        <h1>S'i' fosse foco</h1>
+        <p class="cover-sub">Come Fabrizio De André ha messo in musica il sonetto di Cecco Angiolieri</p>
+        <button class="cover-btn" onclick="go(1)">Inizia la presentazione <span>→</span></button>
+      </div>
+      <figure class="cover-quote">
+        <blockquote>
+          S'i' fosse foco, arderei 'l mondo;<br>
+          s'i' fosse vento, lo tempestarei;<br>
+          s'i' fosse acqua, i' l'annegherei;<br>
+          s'i' fosse Dio, mandereil' en profondo.
+        </blockquote>
+        <figcaption>Cecco Angiolieri, sonetto, fine del XIII secolo</figcaption>
+      </figure>
+    </div>
+
+    <dl class="cover-meta">
+      <div><dt>Presentazione di</dt><dd>Matilde Dellanoce</dd></div>
+      <div><dt>Autori</dt><dd>Cecco Angiolieri · Fabrizio De André</dd></div>
+      <div><dt>Brano</dt><dd><i>Volume III</i>, 1968</dd></div>
+      <div><dt>Navigazione</dt><dd>Frecce ↑ ↓ · tasto F a schermo intero</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- 2. DE ANDRÉ -->
+<section id="deandre" data-title="Fabrizio De André">
+  <div class="grid-2">
+    <div class="reveal">
+      <p class="kicker">Il cantautore</p>
+      <h2>Fabrizio De André</h2>
+      <p class="lead">Genova, 18 febbraio 1940 – Milano, 11 gennaio 1999. Conosciuto come <em class="hl">“Faber”</em>, è considerato uno dei maggiori cantautori italiani del Novecento.</p>
+      <p>Al centro delle sue canzoni ci sono gli <b>emarginati</b>: persone escluse dalla società, sconfitti, ribelli. Il suo punto di vista è libertario e anticonformista, vicino al pensiero anarchico, e guarda con sospetto ogni forma di potere.</p>
+      <p>Il suo lavoro dialoga spesso con la <b>letteratura</b>: traduce le canzoni del francese Georges Brassens, si ispira ai Vangeli apocrifi in <i>La buona novella</i> e all'<i>Antologia di Spoon River</i> di Edgar Lee Masters.</p>
+      <p>Per la cura dei testi viene spesso definito un <b>poeta della canzone</b>: alcuni suoi brani sono stati inseriti anche nelle antologie scolastiche.</p>
+      <div class="facts">
+        <button class="chip" data-info="La canzone d'autore è un genere nato in Italia tra gli anni Cinquanta e Sessanta, in cui lo stesso artista scrive testo e musica (il cantautore). Il testo ha un ruolo centrale: racconta storie, esprime idee e spesso ha un valore letterario, a differenza della musica leggera di puro intrattenimento."><b>Genere</b> canzone d'autore</button>
+        <button class="chip" data-info="Georges Brassens (1921-1981) è un cantautore francese, noto per le sue canzoni ironiche, anticonformiste e attente agli emarginati. De André lo considera il suo maestro: ne traduce e reinterpreta diversi brani, come “Il gorilla” e “Nell'acqua della chiara fontana”, presenti proprio in Volume III."><b>Modello</b> Georges Brassens</button>
+        <button class="chip" data-info="De André racconta personaggi esclusi dalla società, come prostitute, ladri, soldati e carcerati. Difende la libertà dell'individuo e critica il potere politico, religioso ed economico, schierandosi sempre dalla parte dei più deboli."><b>Temi</b> emarginati, libertà, critica del potere</button>
+      </div>
+    </div>
+    <div class="reveal">
+      <figure>
+        <img class="main" src="img/deandre1960.jpg" alt="Fabrizio De André da giovane, fotografia in bianco e nero" style="object-position:center 20%">
+      </figure>
+      <figure>
+        <img class="second" src="img/deandre.jpg" alt="Fabrizio De André mentre canta al microfono" style="object-position:center 35%">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 3. CECCO -->
+<section id="cecco" data-title="Cecco Angiolieri">
+  <div class="grid-2">
+    <div class="reveal">
+      <p class="kicker">Il poeta</p>
+      <h2>Cecco Angiolieri</h2>
+      <p class="lead">Siena, 1260 circa – 1312 circa. Contemporaneo di Dante, è il più noto esponente della <em class="hl">poesia comico-realistica</em> del Duecento.</p>
+      <p>Nasce in una ricca famiglia guelfa, ma conduce una vita disordinata: riceve diverse multe (anche per aver abbandonato il campo durante una spedizione militare), accumula debiti e, alla sua morte, i figli rinunciano all'eredità.</p>
+      <p>Nei suoi sonetti celebra ciò che lo <b>Stilnovo</b> escludeva: «la donna, la taverna e 'l dado», il desiderio di denaro, il contrasto con il padre avaro, l'amata Becchina, una popolana lontana dalla donna-angelo.</p>
+      <p>Per questo è considerato la voce <b>opposta a Dante</b>: dove lo Stilnovo idealizza, Cecco abbassa il tono, provoca e fa ridere.</p>
+      <div class="facts">
+        <button class="chip" data-info="Corrente poetica sviluppata in Toscana nella seconda metà del Duecento. Si contrappone allo Stilnovo: invece della donna-angelo e dell'amore spirituale, racconta la vita quotidiana con un linguaggio concreto, a volte volgare, usando ironia, parodia ed esagerazione. Spesso la ribellione è più un gioco letterario che un sentimento reale."><b>Genere</b> poesia comico-realistica</button>
+        <button class="chip" data-info="Il sonetto è una forma metrica nata alla corte di Federico II nel Duecento ed è attribuita a Giacomo da Lentini. È composto da 14 endecasillabi divisi in due quartine e due terzine. È la forma più usata della poesia italiana, da Dante e Petrarca fino all'età moderna."><b>Forma</b> sonetto</button>
+        <button class="chip" data-info="Nei sonetti di Cecco ricorrono il denaro, che gli manca sempre, il gioco d'azzardo e la taverna, l'amore per Becchina, una popolana capricciosa, e l'ostilità verso il padre, accusato di essere avaro. Sono i temi della vita quotidiana e “bassa”, opposti a quelli nobili dello Stilnovo."><b>Temi</b> denaro, gioco, donna, padre</button>
+      </div>
+    </div>
+    <div class="reveal">
+      <figure>
+        <img class="main" src="img/decameron.png" alt="Miniatura medievale dal Decameron">
+      </figure>
+      <figure>
+        <img class="second" src="img/siena.jpg" alt="Piazza del Campo a Siena">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4. CONFRONTO -->
+<section id="incontro" data-title="Il confronto">
+  <p class="kicker reveal">Sette secoli di distanza</p>
+  <h2 class="reveal">Due autori a confronto</h2>
+  <div class="compare reveal" id="compare">
+    <div class="head left"><h3>Cecco Angiolieri</h3><small>poeta, fine Duecento</small></div>
+    <div class="head label">vs</div>
+    <div class="head"><h3>Fabrizio De André</h3><small>cantautore, 1968</small></div>
+  </div>
+  <div class="meeting reveal">
+    <div class="icon">∞</div>
+    <div><b>Il punto d'incontro.</b> Nel 1968 De André inserisce il sonetto nell'album <i>Volume III</i> (Bluebell Records), accanto a due traduzioni di Brassens (<i>Il gorilla</i> e <i>Nell'acqua della chiara fontana</i>) e a un canto tradizionale francese (<i>Il re fa rullare i tamburi</i>).</div>
+  </div>
+  <div class="facts reveal">
+    <button class="chip" data-info="Terzo album in studio di De André, pubblicato nel 1968 dalla Bluebell Records. Contiene sia brani originali sia rielaborazioni: due canzoni di Brassens, un canto tradizionale francese e il sonetto di Cecco Angiolieri."><b>Album</b> Volume III (1968)</button>
+    <button class="chip" data-info="Il testo della canzone è il sonetto di Cecco Angiolieri, scritto alla fine del Duecento. De André lo canta quasi senza modifiche, conservandone la lingua antica."><b>Testo</b> Cecco Angiolieri</button>
+    <button class="chip" data-info="La musica è firmata da De André insieme a Gian Piero Reverberi, musicista e arrangiatore genovese con cui collaborò negli anni Sessanta."><b>Musica</b> F. De André e G. P. Reverberi</button>
+    <button class="chip" data-info="L'arrangiamento è la scelta degli strumenti e del modo in cui accompagnano la melodia. Reverberi usa clavicembalo e trombe per creare un'atmosfera medievale e teatrale."><b>Arrangiamento</b> Gian Piero Reverberi</button>
+    <button class="chip" data-info="È uno dei brani più brevi di De André: poco più di un minuto, il tempo necessario per cantare i 14 versi del sonetto e riprendere la prima quartina."><b>Durata</b> 1'14"</button>
+  </div>
+</section>
+
+<!-- 5. STRUTTURA POESIA -->
+<section id="poesia" data-title="Struttura della poesia">
+  <p class="kicker reveal">Analisi metrica</p>
+  <h2 class="reveal">La struttura del sonetto</h2>
+  <div class="grid-2" style="align-items:start">
+    <div class="reveal">
+      <div class="legend" id="legend">
+        <button data-f="elementi"><i style="background:var(--fire)"></i>Elementi naturali</button>
+        <button data-f="poteri"><i style="background:var(--gold)"></i>Poteri</button>
+        <button data-f="famiglia"><i style="background:var(--blue)"></i>Famiglia</button>
+        <button data-f="io"><i style="background:var(--rose)"></i>Cecco stesso</button>
+        <button id="rhymeBtn">Mostra rime</button>
+      </div>
+      <div class="sonnet" id="sonnet"></div>
+    </div>
+    <div class="explain reveal">
+      <div class="card">
+        <p class="kicker" id="exKick">Clicca su un verso</p>
+        <div class="para" id="exPara">14 versi, una struttura rigorosa</div>
+        <p class="note" id="exNote">Il sonetto è composto da <b>14 endecasillabi</b> (versi di undici sillabe), divisi in <b>due quartine</b> e <b>due terzine</b>. Lo schema delle rime è <b>ABBA ABBA CDC DCD</b>. Quasi ogni verso si apre con la formula ipotetica “S'i' fosse…”: si tratta di un'<b>anafora</b>, che dà al testo il ritmo di una cantilena.</p>
+      </div>
+      <div class="climax">
+        <div style="background:var(--fire)">Elementi<small>fuoco, vento, acqua</small></div>
+        <div style="background:var(--gold)">Poteri<small>Dio, papa, imperatore</small></div>
+        <div style="background:var(--blue)">Famiglia<small>morte, vita, genitori</small></div>
+        <div style="background:var(--rose)">Io<small>la battuta finale</small></div>
+      </div>
+      <p class="note" style="margin-top:12px;color:var(--muted);font-size:15px">Il discorso procede per <b>climax discendente</b>: dall'intero universo si arriva, verso dopo verso, alla vita privata di Cecco, fino al <b>rovesciamento</b> ironico dell'ultima terzina.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. STRUTTURA CANZONE -->
+<section id="canzone" data-title="Struttura della canzone">
+  <p class="kicker reveal">Dalla pagina al disco</p>
+  <h2 class="reveal">La struttura della canzone</h2>
+  <p class="lead reveal">De André non riscrive il sonetto, ma lo canta quasi parola per parola. Cambia invece la <b>forma</b>: una canzone richiede un'introduzione, delle ripetizioni e una chiusura. Clicca sui blocchi per leggere la descrizione.</p>
+  <div class="song-map reveal" id="songMap"></div>
+  <p class="song-info reveal" id="songInfo">Schema semplificato del brano (durate indicative).</p>
+  <div class="grid-2 reveal" style="margin-top:30px;align-items:start">
+    <div class="card">
+      <h3>Il tempo di valzer</h3>
+      <p>Il brano si basa su un <b>tempo ternario</b>, il 3/4 tipico del <b>valzer</b>: ogni battuta è divisa in tre tempi, con l'accento forte sul primo (<b>UN</b>-due-tre).</p>
+      <div class="measure" aria-label="Schema della battuta in 3/4"><span class="strong">1</span><span>2</span><span>3</span></div>
+      <p style="margin-top:16px">Il valzer nasce come danza popolare di area austro-tedesca alla fine del Settecento e diventa poi il ballo delle sale da concerto e delle feste di paese. È un ritmo <b>leggero, circolare e brillante</b>: proprio per questo, abbinato a un testo così aggressivo, produce un effetto ironico.</p>
+    </div>
+    <div class="card">
+      <h3>Come è stata composta</h3>
+      <p><b>1. Il testo resta intatto.</b> I 14 endecasillabi vengono mantenuti; la prima quartina ritorna alla fine come <b>ripresa</b>, con una funzione simile a quella di un ritornello.</p>
+      <p><b>2. Ogni verso diventa una frase musicale.</b> L'anafora “S'i' fosse…” si trasforma in un attacco ripetuto, facile da memorizzare.</p>
+      <p><b>3. Un'armonia semplice.</b> Il brano usa pochi accordi in tonalità minore (nel disco sol diesis minore). Il giro principale, trasposto in la minore, è <b>Am – F – E7 – Am</b>.</p>
+      <p><b>4. Il contrasto.</b> Parole di distruzione su un ritmo di danza: lo scarto crea <b>ironia</b> e fa capire che la rabbia di Cecco è un gioco letterario.</p>
+      <p><b>5. Un'ambientazione antica.</b> L'arrangiamento di Gian Piero Reverberi, coautore della musica, usa clavicembalo e squilli di tromba, che richiamano le corti e le piazze del passato.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TESTO E SIGNIFICATO -->
+<section id="testo" data-title="Testo e significato">
+  <p class="kicker reveal">Leggere e comprendere</p>
+  <h2 class="reveal">Il testo e il suo significato</h2>
+  <p class="lead reveal">Il testo cantato è il sonetto di Cecco (XIII secolo, oggi di pubblico dominio). Attivando la parafrasi si può leggere ogni verso in italiano moderno.</p>
+  <div class="controls reveal">
+    <button class="btn" id="paraBtn">Mostra parafrasi</button>
+  </div>
+  <div class="grid-2 reveal" style="align-items:start">
+    <div class="card sonnet" id="lyrics"></div>
+    <div>
+      <div class="card">
+        <h3>Il significato</h3>
+        <p><b>Le quartine.</b> Cecco immagina di essere le forze più potenti dell'universo (fuoco, vento, acqua, Dio) e le massime autorità del suo tempo (papa e imperatore). Ogni volta il desiderio è lo stesso: <b>distruggere</b>.</p>
+        <p><b>La prima terzina.</b> L'ostilità si sposta sulla famiglia: da morte andrebbe dal padre, da vita fuggirebbe da lui, e lo stesso farebbe con la madre. Il tema richiama i numerosi sonetti in cui Cecco accusa il padre di avarizia.</p>
+        <p><b>L'ultima terzina.</b> Arriva il rovesciamento: tornato se stesso, Cecco non vuole più distruggere nulla, ma tenere per sé le donne giovani e belle e lasciare agli altri quelle vecchie e brutte.</p>
+      </div>
+      <blockquote>La furia cosmica si risolve in una battuta da osteria: è questo il nucleo ironico del sonetto.</blockquote>
+      <p style="color:var(--muted);font-size:15px">L'uso del condizionale (<i>arderei, tempesterei…</i>) e del periodo ipotetico mostra che non si tratta di una minaccia reale, ma di una <b>parodia</b> dello stile alto e di una provocazione contro ogni autorità: religiosa, politica e familiare.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PERCHÉ -->
+<section id="perche" data-title="Perché De André">
+  <p class="kicker reveal">La scelta</p>
+  <h2 class="reveal">Perché De André l'ha messa in musica?</h2>
+  <div class="grid-4 reasons reveal">
+    <div class="card"><span class="num">01</span><h3>Un'affinità di pensiero</h3><p>Cecco è un autore irregolare, che attacca Chiesa, Impero e famiglia. De André, libertario e anticonformista, riconosce in lui una sensibilità vicina alla propria.</p></div>
+    <div class="card"><span class="num">02</span><h3>Il contesto del '68</h3><p>Nell'anno della contestazione studentesca, un testo che sfida papa, imperatore e padri appare sorprendentemente attuale e parla direttamente ai giovani.</p></div>
+    <div class="card"><span class="num">03</span><h3>L'ironia</h3><p>Come il suo modello Brassens, De André apprezza l'irriverenza che fa sorridere. Il sonetto non è un manifesto violento, ma una provocazione giocosa, adatta a una canzone.</p></div>
+    <div class="card"><span class="num">04</span><h3>Una poesia già musicale</h3><p>Ritmo regolare, anafora e rime sonore rendono il testo naturalmente cantabile. In musica, un classico studiato a scuola raggiunge un pubblico molto più ampio.</p></div>
+  </div>
+  <p class="lead reveal" style="margin-top:30px">È l'<b>unica volta</b>, nella sua carriera, in cui De André mette in musica una poesia della tradizione letteraria italiana mantenendone il testo originale: un omaggio diretto alle radici della nostra letteratura.</p>
+</section>
+
+<!-- 9. STRUMENTI -->
+<section id="strumenti" data-title="Gli strumenti">
+  <p class="kicker reveal">Il suono di “S'i' fosse foco”</p>
+  <h2 class="reveal">Gli strumenti della canzone</h2>
+  <p class="lead reveal">L'arrangiamento di Gian Piero Reverberi costruisce un'atmosfera volutamente antica, come se il sonetto fosse cantato da un giullare in una piazza medievale. Con “Ascolta” si sente un timbro simile, sintetizzato dal browser.</p>
+  <div class="grid-3 reveal" style="margin-top:20px">
+    <div class="card instr">
+      <img src="img/clavicembalo.jpg" alt="Clavicembalo antico decorato">
+      <div class="body"><p class="role">Il colore antico</p><h3>Clavicembalo</h3><p>Strumento a tastiera in cui le corde vengono pizzicate. Nella canzone scandisce il ritmo di valzer con un suono secco e metallico, che richiama la musica di corte e colloca subito il brano in un passato lontano.</p><button class="btn ghost" data-sound="harpsi">▶ Ascolta</button></div>
+    </div>
+    <div class="card instr">
+      <img src="img/tromba.jpg" alt="Tromba naturale antica">
+      <div class="body"><p class="role">La fanfara</p><h3>Trombe</h3><p>Gli squilli di tromba hanno un tono cerimoniale, simile a quello di un araldo che annuncia un proclama. Contribuiscono al carattere teatrale e solenne, ma in fondo ironico, dell'esecuzione.</p><button class="btn ghost" data-sound="trumpet">▶ Ascolta</button></div>
+    </div>
+    <div class="card instr">
+      <svg viewBox="0 0 300 220" aria-label="Illustrazione di un microfono">
+        <rect x="128" y="34" width="44" height="92" rx="22" fill="#e9c46a"/>
+        <g stroke="#13261a" stroke-width="3"><line x1="136" y1="60" x2="164" y2="60"/><line x1="136" y1="76" x2="164" y2="76"/><line x1="136" y1="92" x2="164" y2="92"/></g>
+        <path d="M110 104 a40 40 0 0 0 80 0" fill="none" stroke="#f4dfa0" stroke-width="6"/>
+        <line x1="150" y1="144" x2="150" y2="184" stroke="#f4dfa0" stroke-width="6"/>
+        <line x1="120" y1="186" x2="180" y2="186" stroke="#f4dfa0" stroke-width="6" stroke-linecap="round"/>
+        <path d="M70 80 q-14 30 0 60 M50 66 q-22 44 0 88 M230 80 q14 30 0 60 M250 66 q22 44 0 88" fill="none" stroke="#8fbf7a" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <div class="body"><p class="role">Il narratore</p><h3>La voce di De André</h3><p>La voce baritonale di De André è il vero centro del brano: un'interpretazione teatrale e beffarda, che dà corpo all'ironia di Cecco e fa risaltare la battuta finale.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. LABORATORIO MUSICALE -->
+<section id="motivetto" data-title="Laboratorio musicale">
+  <p class="kicker reveal">Laboratorio musicale</p>
+  <h2 class="reveal">Il giro di accordi in tempo di valzer</h2>
+  <div class="player reveal">
+    <div>
+      <p class="lead">Un motivetto costruito sul <b>giro di accordi della canzone</b>, <b>Am – F – E7 – Am</b>, in tempo di valzer: introduzione di trombe, clavicembalo che accompagna sul secondo e terzo tempo, basso sul primo.</p>
+      <div class="controls">
+        <button class="btn" id="playBtn">▶ Suona</button>
+        <label>Tempo <input type="range" id="tempo" min="110" max="200" value="160"> <span id="tempoVal">160</span> bpm</label>
+      </div>
+      <div class="toggles">
+        <label><input type="checkbox" data-part="melody" checked> Melodia (tromba)</label>
+        <label><input type="checkbox" data-part="chords" checked> Clavicembalo</label>
+        <label><input type="checkbox" data-part="bass" checked> Basso</label>
+        <label><input type="checkbox" data-part="perc" checked> Percussioni</label>
+      </div>
+    </div>
+    <div>
+      <canvas id="roll" width="900" height="300"></canvas>
+      <div class="chords" id="chordBoxes">
+        <div data-c="Am">Am<small>la minore</small></div>
+        <div data-c="F">F<small>fa maggiore</small></div>
+        <div data-c="E7">E7<small>mi settima</small></div>
+        <div data-c="Am">Am<small>la minore</small></div>
+      </div>
+      <div class="beats" id="playerBeats"><span></span><span></span><span></span><em id="barCount">Battuta – / 18</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. CONCLUSIONE -->
+<section id="fine" data-title="Conclusione">
+  <p class="kicker reveal">Conclusione</p>
+  <h2 class="reveal">Un ponte tra due epoche</h2>
+  <p class="lead reveal">Con <i>S'i' fosse foco</i> De André dimostra che la poesia antica può essere ancora attuale: un ritmo di valzer, un clavicembalo e una voce bastano a portare la provocazione di un poeta senese del Duecento fino al pubblico del 1968, e fino a noi.</p>
+</section>
+
+<footer>Matilde Dellanoce · Liceo Linguistico Giuseppe Parini</footer>
+
+<script src="musica.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
